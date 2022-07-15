@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-body {
-    display: flex;
-    justify-content: center;
-    background-color: #fafafa;
-    font-family: "Roboto", sans-serif;
-}
-
 .container {
-    width: 100%;
+    display: flex;
+    background-color: #fafafa;
+    font-family: "Roboto",
+    sans-serif;
     justify-content: center;
     align-items: center;
 }
@@ -25,6 +21,7 @@ body {
     align-items: center;
     border-bottom: 1px solid #e4e4e4;
     position: fixed;
+    top: 0;
     z-index: 1;
 }
 
@@ -77,17 +74,17 @@ input {
 }
 
 .feed {
-    width: 60%;
+    width: 75%;
+    margin-left: 1%;
     display: flex;
-    margin-left: 11%;
     justify-content: space-between;
 }
 
 .barra-stories {
     background-color: #fff;
-    margin-top: 50px;
+    margin: 50px 180px 0 0;
     display: flex;
-    width: 88%;
+    width: 92%;
     overflow-x: hidden;
     position: relative;
 }
@@ -98,14 +95,13 @@ input {
 }
 
 .barra-stories div {
-    background-image: url(/projeto2-instagram/medias/stories/stories_background.jpg);
     background-size: 80px;
     background-repeat: repeat-x;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px 8px;
+    margin: 10px 5px;
     cursor: pointer;
 }
 
@@ -383,12 +379,12 @@ span {
         justify-content: center;
     }
 
-    .barra-superior,
-    .barra-stories {
+    .barra-superior {
         display: none;
     }
 
     .barra-mobile {
+        width: 100%;
         background-color: #fff;
         display: flex;
         justify-content: space-between;
@@ -401,12 +397,11 @@ span {
         display: none;
     }
 
-    .stories-mobile {
+    .barra-stories {
         width: 100%;
-        margin: 3% 0 0 3%;
+        margin: 0;
         display: flex;
         align-items: center;
-        gap: 2.2%;
         overflow: hidden;
     }
 

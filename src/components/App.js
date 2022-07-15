@@ -1,13 +1,17 @@
 import Topo from "./Topo";
-import Posts from "./Posts";
+import Stories from "./Stories";
 
-const App = () => {
+export default function App() {
   return (
     <>
       <Topo />
-      <Posts />
+      <div className="container">
+        <div className="conteudo">
+          <div className="feed">
+            <Stories />
+          </div>
+        </div>
+      </div>
     </>
   );
-};
-
-export default App;
+}
