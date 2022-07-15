@@ -1,6 +1,7 @@
 import Topo from "./Topo";
 import Stories from "./Stories";
 import Sidebar from "./Sidebar";
+import Posts from "./Posts";
 
 export default function App() {
   return (
@@ -13,6 +14,9 @@ export default function App() {
             <Stories />
           </div>
         </div>
+      </div>
+      <div className="new-feeds">
+        <Posts />
       </div>
     </>
   );
