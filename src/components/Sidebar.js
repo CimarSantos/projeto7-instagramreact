@@ -81,66 +81,6 @@ export default function Sidebar() {
         />
       ))}
 
-      {/* <div class="sugestoes-pages">
-        <div>
-          <img
-            src="/projeto2-instagram/medias/sugestoes/chibirdart 1.png"
-            alt="chibirdart"
-          />
-          <div>
-            <h6>chibirdart</h6>
-            <p>Segue você</p>
-          </div>
-        </div>
-        <div class="btn-seguir">
-          <button>Seguir</button>
-        </div>
-      </div>
-      <div class="sugestoes-pages">
-        <div>
-          <img
-            src="/projeto2-instagram/medias/sugestoes/razoesparaacreditar 1.png"
-            alt="razoesparaacreditar"
-          />
-          <div>
-            <h6>razoesparaacreditar</h6>
-            <p>Novo no Instagram</p>
-          </div>
-        </div>
-        <div class="btn-seguir">
-          <button>Seguir</button>
-        </div>
-      </div>
-      <div class="sugestoes-pages">
-        <div>
-          <img
-            src="/projeto2-instagram/medias/sugestoes/adorableanimals 1.png"
-            alt="adorable_animals"
-          />
-          <div>
-            <h6>adorable_animals</h6>
-            <p>Segue você</p>
-          </div>
-        </div>
-        <div class="btn-seguir">
-          <button>Seguir</button>
-        </div>
-      </div>
-      <div class="sugestoes-pages">
-        <div>
-          <img
-            src="/projeto2-instagram/medias/sugestoes/smallcutecats 1.png"
-            alt="smallcutecats"
-          />
-          <div>
-            <h6>smallcutecats</h6>
-            <p>Segue você</p>
-          </div>
-        </div>
-        <div class="btn-seguir">
-          <button>Seguir</button>
-        </div>
-      </div> */}
       <div class="sidebar-footer">
         <p>
           Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
