@@ -4,6 +4,7 @@ import respondeai from "../assets/img/respondeai 2.png";
 import barked from "../assets/img/stories/barked 1.png";
 import dog from "../assets/img/dog 1.png";
 import adorable from "../assets/img/adorableanimals 2.png";
+import React from "react";
 
 const ContentPost = [
   {
@@ -14,6 +15,8 @@ const ContentPost = [
     altPost: "gato-telefone",
     imgFooter: respondeai,
     altFooter: "respondeai2",
+    curtidoPor: "respondeai",
+    tantasPessoas: "101.523",
   },
   {
     imgTop: barked,
@@ -23,6 +26,8 @@ const ContentPost = [
     altPost: "dog",
     imgFooter: adorable,
     altFooter: "adorableanimals2",
+    curtidoPor: "adorable_animals",
+    tantasPessoas: "85.672",
   },
   {
     imgTop: meowed,
@@ -32,10 +37,16 @@ const ContentPost = [
     altPost: "gato-telefone",
     imgFooter: respondeai,
     altFooter: "respondeai2",
+    curtidoPor: "respondeai",
+    tantasPessoas: "28.365",
   },
 ];
 
 function Post(props) {
+  const [heart, setHeart] = React.useState("heart-outline");
+  function curtir() {
+    setHeart("heart");
+  }
   return (
     <>
       <div class="new-feeds">
@@ -50,12 +61,22 @@ function Post(props) {
             </div>
           </div>
           <div class="image-post">
-            <img src={props.imgPost} alt={props.altPost} />
+            <img onClick={curtir} src={props.imgPost} alt={props.altPost} />
           </div>
           <div class="box-footer">
             <div class="first-line">
               <div>
-                <ion-icon name="heart-outline"></ion-icon>
+                {heart ? (
+                  <ion-icon
+                    name={heart}
+                    onClick={() => setHeart(!heart)}
+                  ></ion-icon>
+                ) : (
+                  <ion-icon
+                    name="heart-outline"
+                    onClick={() => setHeart(curtir)}
+                  ></ion-icon>
+                )}
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </div>
@@ -66,8 +87,8 @@ function Post(props) {
             <div>
               <img src={props.imgFooter} alt={props.altFooter} />
               <p>
-                Curtido por <span>respondeai</span> e
-                <span> outras 101.523 pessoas</span>
+                Curtido por <span>{props.curtidoPor}</span> e
+                <span> outras {props.tantasPessoas} pessoas</span>
               </p>
             </div>
             <div>
@@ -108,6 +129,8 @@ export default function Posts() {
           altPost={contents.altPost}
           imgFooter={contents.imgFooter}
           altFooter={contents.altFooter}
+          curtidoPor={contents.curtidoPor}
+          tantasPessoas={contents.tantasPessoas}
         />
       ))}
     </>

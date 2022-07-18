@@ -261,6 +261,7 @@ input {
 .image-post img,
 video {
     width: 100%;
+    cursor: pointer;
 }
 
 .first-line {
@@ -300,7 +301,7 @@ video {
 }
 
 .box-footer div:nth-child(3) ion-icon {
-    width: 20%;
+    width: 30%;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -310,6 +311,10 @@ video {
     align-items: center;
     border-top: 1px solid #dbdbdb;
     position: relative;
+}
+
+.first-line ion-icon[name="heart"] {
+    color: red;
 }
 
 .box-footer div:nth-child(4) ion-icon {
